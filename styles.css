@@ -51,44 +51,6 @@ img {
     min-height: 100vh;
 }
 
-.sidebar .profile-container {
-  text-align: center;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sidebar .profile-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin: 0 auto 15px;
-  display: block;
-  border: 3px solid rgba(255, 255, 255, 0.2);
-}
-
-.sidebar .name {
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-.sidebar .title {
-  font-size: 0.9rem;
-  margin-bottom: 15px;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.sidebar .social-links {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
 /* Sidebar Styles */
 .sidebar {
     width: 280px;
