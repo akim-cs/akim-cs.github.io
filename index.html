@@ -6,16 +6,240 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Andy Kim Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="image-container">
-            <img src="images/ajk1004@uw.edu-9e3a9447.jpg" alt="Your Name" class="profile-image">
-        </div>
-        <div class="description">
-            <h1>Andy Kim</h1>
-            <p>Hello! I'm a passionate developer with experience in [Your Field, e.g., web development, software engineering]. I love creating innovative solutions and constantly learning new technologies. My goal is to contribute to exciting projects and collaborate with talented teams. Feel free to connect with me!</p>
-        </div>
+        <aside class="sidebar">
+            <div class="profile-container">
+                <img src="images/ajk1004@uw.edu-9e3a9447.jpg" alt="Andy Kim" class="profile-image">
+                <h1 class="name">Andy Kim</h1>
+                <p class="title">Software Developer</p>
+                <div class="social-links">
+                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:ajk1004@uw.edu"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#about" class="active"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section id="about" class="section">
+                <h2 class="section-title"><span>About Me</span></h2>
+                <div class="about-content">
+                    <p>Hello! I'm a passionate developer with experience in web development and software engineering. I love creating innovative solutions and constantly learning new technologies. My goal is to contribute to exciting projects and collaborate with talented teams.</p>
+                    
+                    <p>Currently, I'm focusing on [your current focus or interests]. I earned my degree from the University of Washington, where I developed a strong foundation in [your field].</p>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">ajk1004@uw.edu</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Seattle, WA</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Availability:</span>
+                            <span class="info-value">Open to opportunities</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn">Contact Me</a>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2 class="section-title"><span>My Projects</span></h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="/api/placeholder/400/250" alt="Project 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Project Title 1</h3>
+                            <p>A brief description of your first project. Explain what problems it solves and what technologies you used.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small">Demo</a>
+                                <a href="#" class="btn-small">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="/api/placeholder/400/250" alt="Project 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Project Title 2</h3>
+                            <p>A brief description of your second project. Explain what problems it solves and what technologies you used.</p>
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small">Demo</a>
+                                <a href="#" class="btn-small">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="/api/placeholder/400/250" alt="Project 3">
+                        </div>
+                        <div class="project-info">
+                            <h3>Project Title 3</h3>
+                            <p>A brief description of your third project. Explain what problems it solves and what technologies you used.</p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Django</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-small">Demo</a>
+                                <a href="#" class="btn-small">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <h2 class="section-title"><span>My Skills</span></h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Java</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Web Technologies</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h2 class="section-title"><span>Contact Me</span></h2>
+                <div class="contact-content">
+                    <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>ajk1004@uw.edu</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Seattle, Washington</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>© 2025 Andy Kim. All rights reserved.</p>
+            </footer>
+        </main>
     </div>
+
+    <script>
+        // Add active class to the current navigation item
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Simple scroll to section
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
