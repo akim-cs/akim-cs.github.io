@@ -11,7 +11,26 @@
 </head>
 <body>
     <div class="container">
-        <!-- Copy the sidebar from index.html and paste it here -->
+        <!-- Sidebar copied from index.html -->
+        <aside class="sidebar">
+            <div class="profile-container">
+                <img src="images/ajk1004@uw.edu-9e3a9447.jpg" alt="Andy Kim" class="profile-image">
+                <h1 class="name">Andy Kim</h1>
+                <p class="title">Aspiring SDE/SWE </p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/kim-andy" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:andykimcs@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="index.html#projects" class="active"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="index.html#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+                    <li><a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
         
         <main class="main-content">
             <section class="section">
@@ -149,10 +168,6 @@
                     </div>
                 </div>
             </section>
-
-            <footer class="footer">
-                <p>© 2025 Andy Kim. All rights reserved.</p>
-            </footer>
         </main>
     </div>
 
@@ -165,6 +180,16 @@
                     element.scrollIntoView({ behavior: 'smooth' });
                 }
             }
+        });
+        
+        // Add active class to the current navigation item
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(item => item.classList.remove('active'));
+                this.classList.add('active');
+            });
         });
     </script>
 </body>
