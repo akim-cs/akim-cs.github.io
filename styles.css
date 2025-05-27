@@ -383,6 +383,43 @@ img {
     margin-bottom: 20px;
 }
 
+.project-screenshots {
+    margin: 40px 0;
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.screenshot-item {
+    text-align: center;
+}
+
+.screenshot-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-bottom: 15px;
+    transition: var(--transition);
+}
+
+.screenshot-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.screenshot-item p {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    margin: 0;
+    padding: 0 10px;
+}
+
 .back-to-projects {
     display: inline-flex;
     align-items: center;
@@ -399,7 +436,6 @@ img {
 .back-to-projects:hover {
     color: var(--secondary-color);
 }
-
 
 
 .btn-small {
